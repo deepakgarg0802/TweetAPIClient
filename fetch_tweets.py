@@ -1,7 +1,7 @@
 import tweepy
 from twitter_connection import *
 
-class TweetList():
+class TweetList:
     """docstring for TweetList"""
     def __init__(self):
 
@@ -29,10 +29,10 @@ class TweetList():
                 # to keep things simple, we will give up on an error
                 break
 
-        mytweets=[]
+        mytweets=dict()
         for tweet in searched_tweets:
             if(tweet.retweet_count >0):
-                mytweets.append(tweet.id_str)
+                mytweets[tweet.id_str]= tweet.text
                 #print tweet.user.screen_name+ " : "+ tweet.id_str
                 
         return mytweets

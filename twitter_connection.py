@@ -5,7 +5,7 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy import API
 
-class Create_conn():
+class Create_conn:
 	"""docstring for Create_conn"""
 	def __init__(self):
 		
