@@ -1,0 +1,12 @@
+[apikey]
+key = YOUR_KEY
+secret = YOUR_SECRET
+
+[token]
+token = APPLICATION_TOKEN
+secret = APPLICATION_SECRET
+
+[app]
+rule = YOUR_TWITTER_HANDLE(e.g. @abc11)
+account_screen_name = YOUR_TWITTER_SCREENNAME(e.g. abc11)
+account_user_id = YOUR_TWITTER_HANDLE(e.g. 89568)
