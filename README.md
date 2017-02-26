@@ -70,5 +70,5 @@ Create a twitter app at https://apps.twitter.com/, and make sure you have your C
 * start server
 * open `localhost/twitter.php` in browser
 * Note : the server should have permission to access tweepy package and python
-![Image of Running app](TweetAPIClient/Web_app/docs/screenshot of Web_app.png)
+![Image of Running app](./Web_app/docs/screenshot of Web_app.png)
 
