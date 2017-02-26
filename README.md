@@ -1,7 +1,10 @@
 # Tweet API Client
 
-This repository consists of a Desktop Application which doesnt need a browser and a Web Application (WebSite). These Applications will fetch the tweets from Twitter which contain hashtag : `#custserve` and are tweeted atleast once.
+This repository consists of a [Desktop Application](https://github.com/deepakgarg0802/TweetAPIClient#usage-of-desktop-application) which doesnt need a browser and a [Web Application](https://github.com/deepakgarg0802/TweetAPIClient#usage-of-web-application). These Applications will fetch the tweets from Twitter which contain hashtag : `#custserve` and are tweeted atleast once.
 
+Click [here](https://github.com/deepakgarg0802/TweetAPIClient#usage-of-desktop-application) for Desktop Application
+
+Click [here](https://github.com/deepakgarg0802/TweetAPIClient#usage-of-web-application) for Web Application
 
 ## Usage of Desktop Application
 
