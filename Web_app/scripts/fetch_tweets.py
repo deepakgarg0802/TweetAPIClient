@@ -1,8 +1,9 @@
 import tweepy
-from twitter_connection import *
+from twitter_connection import *   #for creating connection OAuth
 import warnings
 
 class TweetList:
+    """This class is responsible for initializing connection, fetch tweets from Search Api and filter them"""
     
     def __init__(self):
 
@@ -10,11 +11,15 @@ class TweetList:
         self.myApi= myconn.authorize()
 
     def filterTweet(self,query):
-        
+        """ The tweets are fetched from Twitter search API
+            Tweets having more than 1 retweet are filtered """
+
         #query = '%23custserve'
         max_tweets = 1000
         searched_tweets = []
         last_id = -1
+
+        #following loop is required because Search API gives limited tweets per call
 
         while len(searched_tweets) < max_tweets:
             count = max_tweets - len(searched_tweets)
@@ -32,7 +37,7 @@ class TweetList:
 
         mytweets={}
         for tweet in searched_tweets:
-            if(tweet.retweet_count >0):
+            if(tweet.retweet_count >0): #filter tweets having rweetcount greater than 0
                 mytweets[tweet.user.screen_name]=tweet.text
                 #print tweet.user.screen_name+ " : "+ tweet.id_str
                 
